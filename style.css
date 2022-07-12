@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+#content {
+    margin: auto;
+    margin-top: 32px;
+    padding: 32px;
+    width: 800px;
+    border: 1px solid white;
+}
+
+#lifes {
+    text-align: center;
+    margin: 64px 0;
+    font-size: 24px;
+    height: 387px;
+}
+
+#letters{
+    text-align: center;
+}
+
+#guessed_letters{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: .3em;
+    word-wrap: break-word
+}
+
+#guessed_letters p {
+    margin: 0;
+}
+
+.letter-button {
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#game-over, #game-won{
+    font-size: 32px;
+    margin:8px;
+}
+
+#game-over {
+    color:red;
+}
+
+#game-won {
+    color:green;
+}
+
+#new-game-button {
+    color: yellow;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 8px;
+}
