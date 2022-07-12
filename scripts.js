@@ -157,6 +157,7 @@ function checkLetter(button) {
         showLives();
 
         if (lives == 0) {
+            document.getElementById("guessed_letters").innerHTML = current_sentence.sen;
             document.getElementById("lifes").innerHTML += "<p id=\"game-over\">you lost</p>";
             document.getElementById("lifes").innerHTML += "<p id=\"new-game-button\" onclick=\"window.location.reload(true)\">[new game]</p>";
             for (let elem of document.getElementsByClassName("letter-button")) {
