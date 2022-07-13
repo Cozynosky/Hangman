@@ -77,8 +77,8 @@ const sentences = [
     { sen: "pulp fiction", cat: "movie", lvl: "medium" },
     { sen: "forrest gump", cat: "movie", lvl: "medium" },
     { sen: "harry potter", cat: "movie", lvl: "easy" },
-    {sen:"spider-man: home coming", cat:"movie", lvl:"hard"},
-    {sen:"The Lord of the Rings: The Return of the King", cat:"movie", lvl:"insane"},
+    { sen: "spider-man: home coming", cat: "movie", lvl: "hard" },
+    { sen: "The Lord of the Rings: The Return of the King", cat: "movie", lvl: "insane" },
 ]
 
 const current_sentence = sentences[Math.floor(Math.random() * sentences.length)];
@@ -86,6 +86,9 @@ const current_sentence = sentences[Math.floor(Math.random() * sentences.length)]
 //correctly guessed letter storen in lowercase
 var correctlyGuessed = [];
 var toGuess = new Set(current_sentence.sen.split(" ").join("").toUpperCase().split(""));
+toGuess.delete('-');
+toGuess.delete(':');
+toGuess.delete('.');
 var lives = hangman.length - 1;
 
 
